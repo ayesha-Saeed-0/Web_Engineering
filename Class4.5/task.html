@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Course Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Student Course Manager</h1>
+    <div id="students-list"></div>
+    <div id="course-selection" style="display: none" class="modal">
+      <h2>Select Courses for <span id="student-name"></span></h2>
+      <form id="course-form">
+        <div id="course-options" class="course-container"></div>
+        <button type="submit" class="save-btn">Save</button>
+        <button
+          type="button"
+          class="cancel-btn"
+          onclick="closeCourseSelection()"
+        >
+          Cancel
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
