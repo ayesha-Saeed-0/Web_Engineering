@@ -45,21 +45,39 @@
 // console.log(displayDuplicates([1, 2, 3, 4, 5], 6));
 // //--------------------------------------------------------------------------------------------
 
-// High Order Functions
-//Not High Order Function
-let add = function (a, b) {
-  return a + b;
-};
+// // High Order Functions
+// //Not High Order Function
+// let add = function (a, b) {
+//   return a + b;
+// };
 
-let multiply = function (a, b) {
-  return a * b;
-};
-let manipulator = function (a, b, func) {
-  return func(a, b);
-};
+// let multiply = function (a, b) {
+//   return a * b;
+// };
+// let manipulator = function (a, b, func) {
+//   return func(a, b);
+// };
 
-const add = (a, b) => a + b; //High Order Function
-const multiply = (a, b) => a * b;
-const manipulator = (a, b, func) => func(a, b);
+// const add1 = (a, b) => a + b; //High Order Function
+// const multiply1 = (a, b) => a * b;
+// const manipulator1 = (a, b, func) => func(a, b);
 
-console.log(manipulator(3, 5, multiply));
+// console.log(manipulator(3, 5, multiply));
+
+// //-----------------------------------------------------------------------------------
+
+//Closure : to write function in function
+
+function counter() {
+  let count = 0;
+  return function () {
+    return count++;
+  };
+}
+
+let increment = counter();
+console.log(increment());
+console.log(increment());
+console.log(increment());
+console.log(increment());
+console.log(increment());
