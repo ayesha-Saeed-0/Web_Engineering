@@ -84,10 +84,16 @@
 
 // //-----------------------------------------------------------------------------------
 
-//rest operater ...
+// //rest operater ...
 
-function displayDuplicates(...arr) {
-  return val.reduce((val, res) => res * val, 1);
-}
-let val = [1, 2, 3, 2, 4, 5, 6, 1];
-console.log(displayDuplicates(val)); // [2, 1]
+// function displayDuplicates(...arr) {
+//   return val.reduce((val, res) => res * val, 1);
+// }
+// let val = [1, 2, 3, 2, 4, 5, 6, 1];
+// console.log(displayDuplicates(val)); // [2, 1]
+
+// //async and await functions
+// //We will learn this in detail in AJAX
+
+// //Task:Function Generator
+// //-------------------------------------------------------------------------
