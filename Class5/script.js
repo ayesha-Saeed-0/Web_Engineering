@@ -66,18 +66,28 @@
 
 // //-----------------------------------------------------------------------------------
 
-//Closure : to write function in function
+// //Closure : to write function in function
 
-function counter() {
-  let count = 0;
-  return function () {
-    return count++;
-  };
+// function counter() {
+//   let count = 0;
+//   return function () {
+//     return count++;
+//   };
+// }
+
+// let increment = counter();
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+
+// //-----------------------------------------------------------------------------------
+
+//rest operater ...
+
+function displayDuplicates(...arr) {
+  return val.reduce((val, res) => res * val, 1);
 }
-
-let increment = counter();
-console.log(increment());
-console.log(increment());
-console.log(increment());
-console.log(increment());
-console.log(increment());
+let val = [1, 2, 3, 2, 4, 5, 6, 1];
+console.log(displayDuplicates(val)); // [2, 1]
