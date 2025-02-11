@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="main">Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      .active {
+        color: green;
+        font-weight: bold;
+      }
+      #elementlist {
+        margin-bottom: 20px;
+      }
+      .listitem {
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #f4f4f4;
+        cursor: pointer;
+      }
+      #dynamiccontent {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <!-- Selecting Elements Demonstration -->
+    <div id="elementlist">
+      <p class="demopara">First Paragraph</p>
+      <p class="demopara">Second Paragraph</p>
+      <p id="specialpara">Special Paragraph</p>
+    </div>
+
+    <!-- Style Manipulation -->
+    <div id="styledemo" class="listitem">Style Manipulation Target</div>
+
+    <!-- Event Handling -->
+    <button id="clickbutton">Click Me</button>
+    <button id="togglebutton">Toggle Class</button>
+
+    <!-- Dynamic Content Creation -->
+    <div id="dynamiccontent">
+      <h2 id="heading">Dynamic Content Section</h2>
+      <div id="newelemcontainer"></div>
+    </div>
+
+    <!-- Event Delegation -->
+    <ul id="event-delegation-list">
+      <li class="delegation-item">Item 1</li>
+      <li class="delegation-item">Item 2</li>
+      <li class="delegation-item">Item 3</li>
+    </ul>
+
+    <!-- Form for Event Handling -->
+    <form id="demo-form">
+      <input type="text" id="name-input" placeholder="Enter your name" />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
