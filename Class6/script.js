@@ -28,7 +28,7 @@
 // imgg.src =
 //   "https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
-//inner Html is the worst way to add tag
+// inner Html is the worst way to add tag
 
 // const newElementsContainer = document.getElementById("elementlist");
 // const newDiv = document.createElement("button");
