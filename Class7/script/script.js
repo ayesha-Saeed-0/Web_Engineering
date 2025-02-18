@@ -60,3 +60,48 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙";
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const strengths = [
+    "Web Developer",
+    "Creative Designer",
+    "Problem Solver",
+    "Tech Enthusiast",
+  ];
+
+  let index = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const speed = 100;
+  const eraseSpeed = 50;
+  const delay = 1500;
+
+  const typingText = document.getElementById("typing-text");
+
+  if (!typingText) {
+    console.error("Element #typing-text not found.");
+    return;
+  }
+
+  function typeEffect() {
+    const currentText = strengths[index];
+
+    if (isDeleting) {
+      typingText.textContent = currentText.substring(0, charIndex--);
+    } else {
+      typingText.textContent = currentText.substring(0, charIndex++);
+    }
+
+    if (!isDeleting && charIndex === currentText.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, delay);
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      index = (index + 1) % strengths.length; // Loop back
+      setTimeout(typeEffect, speed);
+    } else {
+      setTimeout(typeEffect, isDeleting ? eraseSpeed : speed);
+    }
+  }
+
+  typeEffect();
+});
