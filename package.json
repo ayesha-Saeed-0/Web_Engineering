@@ -4,12 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Class12/restful.js"
+    "start": "nodemon Class14/restful.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "postman": "^0.2.0"
+    "joi": "^17.13.3",
+    "jui": "^2.0.3",
+    "postman": "^0.2.0",
+    "uuid": "^11.1.0"
   }
 }
