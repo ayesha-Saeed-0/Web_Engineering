@@ -1,0 +1,15 @@
+{
+  "name": "web_engineerinng",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Class12/restful.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "postman": "^0.2.0"
+  }
+}

@@ -17,8 +17,8 @@ console.log("Shukar Nodemon");
 const http = require("http"); // Correct module name
 
 const server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "text/plain" }); // Fix the header format
-  res.end("Welcome to Hell"); // Remove invalid <h1> tag (plain text cannot have HTML)
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Welcome to Hell");
 });
 
 server.listen(3000, () => {
